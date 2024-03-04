@@ -1,0 +1,137 @@
+Результаты задания 1.1:
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 nl.py
+первая
+        1       первая
+и еще одна
+        2       и еще одна
+пара
+        3       пара
+пара парарам
+        4       пара парарам
+ку
+        5       ку
+при
+        6       при
+чд
+        7       чд
+кд
+        8       кд
+ладно
+        9       ладно
+ну
+        10      ну
+все
+        11      все
+хватит
+        12      хватит
+пока
+        13      пока
+^Z
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 nl.py .\artifacts\target.txt
+        1       первая
+        2       вторая
+        3       или нумерация с нуля
+        4       не знаю раньше с этим не работал
+        5       хватит или еще?
+        6       ну че тут еще написать
+        7       у меня был тяжелый день
+        8       работать программистом в мл отстой
+        9       хотя лучше чем все остальное
+        10      ну хватит?
+        11      думаю да
+
+Результаты задания 1.2:
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 tail.py artifacts\target.txt
+вторая
+или нумерация с нуля
+не знаю раньше с этим не работал
+хватит или еще?
+ну че тут еще написать
+у меня был тяжелый день
+работать программистом в мл отстой
+хотя лучше чем все остальное
+ну хватит?
+думаю да
+
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 tail.py artifacts\target.txt artifacts\target_tail.txt
+
+ ==> artifacts\target.txt <==
+вторая
+или нумерация с нуля
+не знаю раньше с этим не работал
+хватит или еще?
+ну че тут еще написать
+у меня был тяжелый день
+работать программистом в мл отстой
+хотя лучше чем все остальное
+ну хватит?
+думаю да
+
+ ==> artifacts\target_tail.txt <==
+11 вручную
+12 чтобы легче отселживать было
+13 выводит он последни семнадцать или нет
+14 вроде должен да
+15 так че еще
+16 а можно на латиницу перейти
+17 asd
+18 asdftew
+19 askdkas
+20 qwerty - moi password vezde
+
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 tail.py
+один
+два
+три
+четыре
+пять
+шесть
+семь
+восемь
+девять
+десять
+одиннадцать
+двенадцать 
+тринадцать
+четырнадцать
+пятнадцать 
+шестнадцать 
+семнадцать
+восемнадцать
+девятнадцать
+^Z
+три
+четыре
+пять
+шесть
+семь
+восемь
+девять
+десять
+одиннадцать
+двенадцать
+тринадцать
+четырнадцать
+пятнадцать
+шестнадцать
+семнадцать
+восемнадцать
+девятнадцать
+
+Результаты задания 1.3:
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 wc.py 
+askdjjkasjkd
+asdkjka
+ek2wsk
+asd
+sakdjkasd sadkasid
+askdiuwud sadjh saudyasu
+123dsf ask
+^Z
+        7       11      87
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 wc.py artifacts\target.txt
+        11      40      388     artifacts\target.txt
+(venv) PS C:\Users\nikita.pakunov\Desktop\advanced_python\hw1> python3 wc.py artifacts\target.txt artifacts\target_tail.txt  
+        11      40      388     artifacts\target.txt
+        19      78      637     artifacts\target_tail.txt
+        30      118     1025    total
